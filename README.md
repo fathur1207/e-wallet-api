@@ -79,6 +79,11 @@ Edit file `src/main/resources/application.properties` sesuai kredensial MySQL:
 spring.datasource.url=jdbc:mysql://localhost:3306/ewallet_db?useSSL=false&serverTimezone=UTC&createDatabaseIfNotExist=true
 spring.datasource.username=root
 spring.datasource.password=pwd
+
+#Load data.sql
+spring.jpa.defer-datasource-initialization=true
+spring.sql.init.mode=always
+
 ```
 
 Ganti `root` / `pwd` dengan username dan password MySQL.
