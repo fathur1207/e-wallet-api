@@ -11,15 +11,11 @@ Dibangun menggunakan **Spring Boot 3**, **Spring Data JPA**, dan **MySQL**.
 
 ## 1. Prasyarat
 
-Pastikan tools berikut sudah terpasang di komputer Anda:
-
-| Tool          | Versi Minimal | Cek versi              |
+| Tool          | Versi          | Cek versi              |
 |---------------|----------------|-------------------------|
 | Java (JDK)    | 17             | `java -version`         |
-| Maven         | 3.8+ (opsional, project ini sudah include Maven Wrapper `mvnw`) | `mvn -version` |
+| Maven         | 3.8+           | `mvn -version` |
 | MySQL Server  | 8.0            | `mysql --version`       |
-
-> Jika Anda tidak ingin install Maven secara global, gunakan `./mvnw` (Linux/Mac) atau `mvnw.cmd` (Windows) yang sudah tersedia di project (lihat catatan di bagian bawah jika wrapper belum ada).
 
 ---
 
@@ -58,8 +54,6 @@ e-wallet-api/
     │       └── data.sql                       # Seeding data user awal
     └── test/
 ```
-
----
 
 ## 3. Setup Database (MySQL)
 
@@ -145,7 +139,6 @@ Jika berhasil, aplikasi akan berjalan di:
 ```
 http://localhost:8080
 ```
-
 ---
 
 ## 6. Dokumentasi Endpoint
